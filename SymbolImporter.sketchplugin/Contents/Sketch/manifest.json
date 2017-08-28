@@ -1,0 +1,31 @@
+{
+  "name": "Sketch Symbol Importer",
+  "description": "Import symbols from on Sketch file into another. Maintains overrides and updates existing symbols in place.",
+  "author": "Drew Loomer",
+  "homepage": "https://github.com/sketch-symbol-importer/sketch-symbol-importer",
+  "version": 1.0,
+  "identifier": "com.sketch-symbol-importer.sketch.sketch-symbol-importer",
+  "updateURL": "https://github.com/sketch-symbol-importer/sketch-symbol-importer",
+  "compatibleVersion": 1,
+  "bundleVersion": 1,
+  "commands": [{
+      "name": "Import By ID",
+      "identifier": "id",
+      "shortcut": "ctrl shift i",
+      "script": "importSymbols.js",
+      "handler": "importSymbolsByID"
+    }, {
+      "name": "Import By Name",
+      "identifier": "name",
+      "shortcut": "ctrl alt shift i",
+      "script": "importSymbols.js",
+      "handler": "importSymbolsByName"
+    }
+  ],
+  "menu": {
+    "items": [
+      "id",
+      "name"
+    ]
+  }
+}
